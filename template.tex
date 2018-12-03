@@ -1,0 +1,81 @@
+\documentclass[9pt,compress]{beamer}
+
+% ========================================================
+% CUSTOMIZATIONS 
+\newcommand{\authorname}{First Name Last Name}
+\newcommand{\shortauthor}{R. Sanchez}
+\newcommand{\authoremail}{first.last@c137.com}
+\newcommand{\coauthors}{Co-author1, Cco-author2}
+\newcommand{\institution}{Some University}
+\newcommand{\authoraffiliation}{Some lab}
+\newcommand{\slidesettitle}{Smart, concise and short title}
+\newcommand{\shorttitle}{Short title}
+\newcommand{\slidesetsubtitle}{}
+\newcommand{\logoimagepath}{logos/poly_logo}
+\newcommand{\logoimagepathlab}{logos/lm2_logo}
+
+% ==========================================================
+%% PACKAGES
+\usepackage[utf8]{inputenc}
+%\usepackage[english]{babel}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{color}
+\usepackage{etex}
+\usepackage{cite}
+\usepackage{rotating}
+\usepackage{hyperref}
+\usepackage{import}
+\usepackage{media9}
+\usepackage{subfig}
+\DeclareCaptionLabelSeparator{horse}{:\quad} % change according to your needs
+%\captionsetup{labelsep = horse,figureposition = bottom} 
+\usepackage{textcomp,amsfonts,stmaryrd,soulutf8}
+\usepackage{xifthen}% provides \isempty test
+\usepackage{longtable,ifthen,xspace,url}
+\usepackage{verbatim,pdflscape}
+\usepackage[babel=true]{csquotes} % style de guillements 
+\usepackage{bibentry}
+\bibliographystyle{ieeetr}
+%\usepackage{lipsum}
+\usepackage{caption}
+\captionsetup{font=scriptsize,labelfont=scriptsize}
+
+\graphicspath{{./images/}}
+
+%% Maths
+\usepackage{mathtools,mathabx,mathpazo}
+\usepackage{amsmath,amssymb,amscd,mathrsfs,fixmath}
+%fraction a/b
+\newcommand{\rfrac}[2]{\raisebox{0.5ex}{$#1$}\slash\raisebox{-0.5ex}{$#2$}} 
+% function f->...
+\newcommand{\function}[5]{\begin{array}{crcl}
+#1 \, : & #2 & \longrightarrow & #3 \\
+    & #4 & \longmapsto & #5 \end{array}}
+%\begin{equation}
+%\function{d}{\mathbb{R}^3}{\mathbb{R}^3}{\boldsymbol\xi}{\boldsymbol{d}(\boldsymbol\xi) = \boldsymbol\eta}  
+%\end{equation}
+
+% ==========================================================
+%BEGIN DOCUMENT
+%\begin{document}
+% ==========================================================
+% DO NOT MODIFY THE NEXT LINE
+% First slide + template
+\input{includes/header-commands}
+% ======================= BEGIN SLIDES =====================
+	
+%Sets
+
+\captionsetup{font=scriptsize, labelfont=scriptsize}
+
+
+\input{./sections/00-introduction.tex}
+
+
+\end{document}
